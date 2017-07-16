@@ -1,6 +1,6 @@
 # Clustering graph
 
-<b style="color:red;">(Under Construction)</b><br>
+<b style="background:red;">(Under Construction)</b><br>
 Test, implementation of various algorithm of cluster graph.<br><br>
 
 <ul>
