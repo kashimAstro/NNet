@@ -10,10 +10,13 @@ Test, implementation of various algorithm of cluster graph.<br><br>
 </ul>
 <br>
 <b>Test K-Means image</b><br>
+https://en.wikipedia.org/wiki/K-means_clustering
 <img src="screen/k-means-clustergraph.png"></br>
 <b>Test agglomerative 2D</b><br>
+https://en.wikipedia.org/wiki/Hierarchical_clustering
 <img src="screen/agglomerative-clustergraph.png"></br>
 <b>Test affinity 2D</b><br>
+https://en.wikipedia.org/wiki/Affinity_propagation
 <img src="screen/affinity-clustergraph.png"></br>
 <br>
 <!--<b>Test recostruction (under costruction)</b>
