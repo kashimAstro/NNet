@@ -16,7 +16,7 @@ Test, implementation of various algorithm of cluster graph.<br><br>
 <b>Test affinity 2D</b><br>
 <img src="screen/affinity-clustergraph.png"></br>
 <br>
-<b>Test recostruction (under costruction)</b>
-<img src="screen/recostruction-clustergraph1.png"></br>
-<img src="screen/recostruction-clustergraph2.png"></br>
-<br>
+<!--<b>Test recostruction (under costruction)</b>
+<img src="screen/recostruction-clustergraph1.png">
+<img src="screen/recostruction-clustergraph2.png">
+<br>-->
