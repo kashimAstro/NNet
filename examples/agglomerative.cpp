@@ -5,7 +5,7 @@
 
 */
 
-#include "ClusertGraph.h"
+#include "NNet.h"
 
 using namespace cimg_library;
 using namespace CGAgglomerative;

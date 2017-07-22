@@ -31,6 +31,13 @@ using namespace std;
 
 namespace CluserGraphUtility
 {
+	double random(double min, double max) 
+	{
+	    double range = (max - min); 
+	    double div = RAND_MAX / range;
+	    return min + (rand() / div);
+	}
+
 	vector<string> split(const string& input, const string& _regex) 
 	{
 	    regex re(_regex);

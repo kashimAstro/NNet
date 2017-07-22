@@ -1,8 +1,19 @@
+<b>(Under Construction)</b><br>
+Study, implementation of various algorithm: multi-layer-perceptron, cluster graph, cnn, rnn<br><br>
+
+# Perceptron
+<ul>
+<li>Perceptron</li>
+<li>Multilayer-perceptron</li>
+</ul>
+<b>single neuron perceptron</b><br>
+https://en.wikipedia.org/wiki/Perceptron
+<img src="screen/single-layer-perceptron.png"></br>
+<b>Multilayer perceptron</b><br>
+https://en.wikipedia.org/wiki/Multilayer_perceptron
+<img src="screen/multi-layer-perceptron.png"></br>
+
 # Clustering graph
-
-<b style="background:red;">(Under Construction)</b><br>
-Test, implementation of various algorithm of cluster graph.<br><br>
-
 <ul>
 <li>K-Means</li>
 <li>Affinity propagation</li>

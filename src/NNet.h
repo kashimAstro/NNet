@@ -10,3 +10,5 @@
 #include "affinity-propagation.h"
 #include "agglomerative-hierarchical.h"
 #include "k-means.h"
+#include "multilayerPerceptron.h"
+#include "perceptron.h"
