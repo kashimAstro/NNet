@@ -1,12 +1,20 @@
 <b>(Under Construction)</b><br>
 Study, implementation of various algorithm: multi-layer-perceptron, cluster graph, cnn, rnn<br><br>
 
+# Mnist convolutional neural network
+<ul>
+<li>Simple MNIST detect number</li>
+</ul>
+<b>CNN</b><br>
+https://en.wikipedia.org/wiki/Convolutional_neural_network
+<img src="screen/mnist-cnn.png"></br>
+
 # Perceptron
 <ul>
 <li>Perceptron</li>
 <li>Multilayer-perceptron</li>
 </ul>
-<b>single neuron perceptron</b><br>
+<b>Single neuron perceptron</b><br>
 https://en.wikipedia.org/wiki/Perceptron
 <img src="screen/single-layer-perceptron.png"></br>
 <b>Multilayer perceptron</b><br>
