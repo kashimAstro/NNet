@@ -1,7 +1,7 @@
 /*
-        Test K-Means clustering
+        Test:   K-Means clustering
         Author: Dario Longobardi
-        data:   15 / 7 / 2017
+        data:   2017
 
 */
 

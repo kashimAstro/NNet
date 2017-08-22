@@ -1,8 +1,6 @@
 /*
-	Test K-Means clustering
-	Author: Dario Longobardi
-	data:   15 / 7 / 2017
-
+        Author: Dario Longobardi
+        data:   2017
 */
 #include "NNet.h"
 
@@ -10,9 +8,9 @@ using namespace cimg_library;
 
 int main(int argc, char *argv[])
 {
-	if(argc < 3)
+	if(argc < 2)
 	{
-		cout<< "Error: file data (k-means) and factor"<< endl;
+		cout<< "Error: file data (k-means)"<< endl;
 		exit(0);
 	}
 
@@ -37,7 +35,7 @@ int main(int argc, char *argv[])
 	k.update();
 
 	/* draw point graph */
-	float f = atof(argv[2]);
+	float f = 0.6;
 	int x = 100;
 	int y = 80;
 	for( unsigned int i = 0; i < k.getData().id.size(); i++ )

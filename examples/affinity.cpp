@@ -1,8 +1,6 @@
 /*
-        Test K-Means clustering
         Author: Dario Longobardi
-        data:   15 / 7 / 2017
-
+        data:   2017
 */
 
 #include "NNet.h"
@@ -11,13 +9,13 @@ using namespace cimg_library;
 
 int main(int argc, char *argv[])
 {
-	if(argc < 3)
+	if(argc < 2)
   	{
-		cout<< "Error: file data affinity-propagation and factor"<< endl;
+		cout<< "Error: file data affinity-propagation"<< endl;
 		exit(0);
   	}
 
-	float fac = atof(argv[2]); 
+	float fac = 1;//atof(argv[2]); 
 	float x=200,y=120;
         const unsigned char p[3] = { 255,0,255 };
 	CImg<unsigned char> img(640,400,1,3);

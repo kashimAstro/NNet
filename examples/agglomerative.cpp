@@ -1,8 +1,6 @@
 /*
-        Test K-Means clustering
         Author: Dario Longobardi
-        data:   15 / 7 / 2017
-
+        data:   2017
 */
 
 #include "NNet.h"
@@ -12,9 +10,9 @@ using namespace CGAgglomerative;
 
 int main(int argc, char *argv[])
 {
-	if(argc < 3)
+	if(argc < 2)
   	{
-		cout<< "Error: file data agglomerative and factor"<< endl;
+		cout<< "Error: file data agglomerative"<< endl;
 		exit(0);
   	}
 	CImg<unsigned char> img(640,400,1,3);
@@ -36,7 +34,7 @@ int main(int argc, char *argv[])
 			get_k_clusters(cluster, k);
 			free_cluster(cluster);
 			AgglomerativeData data = getData();
-			float f = atof(argv[2]);
+			float f = 25;
 		        int x = 100;
 		        int y = 80;
 			for(int i = 0; i < data.x.size(); i++)

@@ -1,3 +1,9 @@
+/*
+        Test:   agglomerative-hierarchical clustering
+        Author: Dario Longobardi
+        data:   2017
+*/
+
 #include <float.h>
 #include <math.h>
 #include <stdio.h>

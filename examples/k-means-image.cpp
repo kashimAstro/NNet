@@ -1,8 +1,6 @@
 /*
-	Test K-Means clustering
 	Author: Dario Longobardi
-	data:   15 / 7 / 2017
-
+	data:   2017
 */
 #include "NNet.h"
 
@@ -10,9 +8,9 @@ using namespace cimg_library;
 
 int main(int argc, char *argv[])
 {
-	if(argc < 3)
+	if(argc < 2)
 	{
-		cout<< "Error: ./bin/k-means-image image factor"<< endl;
+		cout<< "Error: ./bin/k-means-image image"<< endl;
 		exit(0);
 	}
 
@@ -55,7 +53,7 @@ int main(int argc, char *argv[])
 	k.setup(color,med);
 	k.update();
 
-	float f = atof(argv[2]);
+	float f = 180;
 	int x = 100;
 	int y = 80;
 	for( unsigned int i = 0; i < k.getData().id.size(); i++ )

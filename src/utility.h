@@ -1,8 +1,6 @@
 /*
-        Test K-Means clustering
         Author: Dario Longobardi
-        data:   15 / 7 / 2017
-
+        data:   2017
 */
 
 #include <iostream>
@@ -11,7 +9,7 @@
 #include <cctype>
 #include <string>
 #include <algorithm>
-
+#include <fstream>
 using namespace std;
 
 #define NOT_USED  0 /* node is currently not used */
@@ -52,6 +50,22 @@ namespace CluserGraphUtility
 	   auto wsfront=find_if_not(s.begin(),s.end(),[](int c){return isspace(c);});
 	   auto wsback=find_if_not(s.rbegin(),s.rend(),[](int c){return isspace(c);}).base();
 	   return (wsback<=wsfront ? string() : string(wsfront,wsback));
+	}
+
+	vector<string> readfile(string _file)
+	{
+		vector<string> str;
+		ifstream data(_file);
+	        string line;
+        	if (data.is_open())
+	        {
+        	    while ( getline (data,line) )
+	            {
+        	        str.push_back( line );
+            	    }
+	            data.close();
+        	}
+		return str;
 	}
 
 	float map(float value, float inputMin, float inputMax, float outputMin, float outputMax, bool clamp=false) {

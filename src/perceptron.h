@@ -1,3 +1,9 @@
+/*
+        Test:   single layer perceptron
+        Author: Dario Longobardi
+        data:   2017
+*/
+
 #include <iostream>
 #include <vector>
 #include <cmath>

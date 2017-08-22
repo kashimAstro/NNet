@@ -1,6 +1,15 @@
 <b>(Under Construction)</b><br>
 Study, implementation of various algorithm: multi-layer-perceptron, cluster graph, cnn, rnn<br><br>
 
+# Restricted Boltzmann Machine 
+<ul>
+<li>Restricted Boltzmann Machine simple data</li>
+</ul>
+<b>RBM</b><br>
+https://en.wikipedia.org/wiki/Restricted_Boltzmann_machine
+<img src="screen/rbm.jpg"></br>
+
+
 # Mnist convolutional neural network
 <ul>
 <li>Simple MNIST detect number</li>

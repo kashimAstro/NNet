@@ -1,7 +1,6 @@
 /*
         Author: Dario Longobardi
-        data:   15 / 7 / 2017
-
+        data:   2017
 */
 
 #include "CImg.h"
@@ -12,3 +11,4 @@
 #include "multilayer-perceptron.h"
 #include "perceptron.h"
 #include "mnist-cnn.h"
+#include "restricted-boltzmann-machine.h"

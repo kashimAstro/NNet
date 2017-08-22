@@ -1,3 +1,9 @@
+/*
+        Test:   multilayer-perceptron
+        Author: Dario Longobardi
+        data:   2017
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include <stdio.h>

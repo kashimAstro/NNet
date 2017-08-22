@@ -1,3 +1,9 @@
+/*
+        Test:   cnn mnist
+        Author: Dario Longobardi
+        data:   2017
+*/
+
 #include <iostream>
 #include <fstream>
 #include <cstring>

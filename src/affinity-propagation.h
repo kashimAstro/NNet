@@ -1,8 +1,7 @@
 /*
-        Test K-Means clustering
+        Test:   affinity-propagation clustering
         Author: Dario Longobardi
-        data:   15 / 7 / 2017
-
+        data:   2017
 */
 
 #include <iostream>

@@ -1,3 +1,8 @@
+/*
+        Author: Dario Longobardi
+        data:   2017
+*/
+
 #include "ofMain.h"
 #include "NNet.h"
 
