@@ -7,7 +7,7 @@ Study, implementation of various algorithm: multi-layer-perceptron, cluster grap
 </ul>
 <b>RBM</b><br>
 https://en.wikipedia.org/wiki/Restricted_Boltzmann_machine
-<img src="screen/rbm.jpg"></br>
+<img src="screen/restricted-boltzmann-machine.jpg"></br>
 
 
 # Mnist convolutional neural network
