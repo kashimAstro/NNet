@@ -3,7 +3,6 @@
 ./bin/k-means-example data/k-means.dat 
 ./bin/k-means-image-example data/k-means-image1.jpg 
 ./bin/k-means-image-example data/k-means-image2.jpg 
-./bin/rbm data/rbm_data.dat 
 ./examples/multilayer-perceptron/bin/multilayer-perceptron 
 ./examples/perceptron/bin/perceptron 
 ./bin/rbm data/rbm_train.dat 
