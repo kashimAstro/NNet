@@ -1,7 +1,0 @@
-./bin/affinity-example data/affinity.dat 1
-./bin/agglomerative data/agglomerative.dat 25
-./bin/k-means-example data/k-means.dat 0.6
-./bin/k-means-image-example data/k-means-image1.jpg 180
-./bin/k-means-image-example data/k-means-image2.jpg 180
-./examples/multilayer-perceptron/bin/multilayer-perceptron
-./examples/perceptron/bin/perceptron
