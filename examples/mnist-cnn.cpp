@@ -21,8 +21,20 @@ int main(int argc, char **argv)
 
         string dataset = argv[1];
         string opt     = argv[2];
-        string training_image_fn = dataset+"/train-images.idx3-ubyte";
-        string training_label_fn = dataset+"/train-labels.idx1-ubyte";
+        string training_image_fn;
+        string training_label_fn;
+
+        if(opt == "training")
+	{
+        	training_image_fn = dataset+"/train-images.idx3-ubyte";
+	        training_label_fn = dataset+"/train-labels.idx1-ubyte";
+	}
+	else if(opt == "testing")
+	{
+		training_image_fn = dataset+"/t10k-images.idx3-ubyte";
+	        training_label_fn = dataset+"/t10k-labels.idx1-ubyte";
+	}
+
         string model_fn = "weights.dat";
 
         cout << training_image_fn << endl;
@@ -52,6 +64,7 @@ int main(int argc, char **argv)
                                 {
                                         for(int k = 0; k < img.wh[i].size(); k++)
                                         {
+						cout << img.wh[i][k] ;
                                                 int c = (img.wh[i][k]==0)?0:255;
                                                 unsigned char col[3];
                                                 col[0] = c;
@@ -59,6 +72,7 @@ int main(int argc, char **argv)
                                                 col[2] = c;
                                                 c_img.draw_point(i,k,0,col);
                                         }
+					cout << endl;
                                 }
 				int nIterations = trainer.learning_process();
                                 string str = "image/iterations_"+to_string(nIterations)+"_label_"+to_string(img.label)+"_error_"+to_string(trainer.square_error())+".jpg";
