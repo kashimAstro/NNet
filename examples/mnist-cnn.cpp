@@ -38,7 +38,7 @@ int main(int argc, char **argv)
         string model_fn = "weights.dat";
 
         cout << training_image_fn << endl;
-        cout << "path: " << argv[1] <<"opt: "<< argv[2] << endl;
+        cout << "path: " << argv[1] <<" opt: "<< argv[2] << endl;
 
         image.open(training_image_fn.c_str(), ios::in | ios::binary);
         label.open(training_label_fn.c_str(), ios::in | ios::binary);
@@ -64,7 +64,6 @@ int main(int argc, char **argv)
                                 {
                                         for(int k = 0; k < img.wh[i].size(); k++)
                                         {
-						cout << img.wh[i][k] ;
                                                 int c = (img.wh[i][k]==0)?0:255;
                                                 unsigned char col[3];
                                                 col[0] = c;
@@ -72,7 +71,6 @@ int main(int argc, char **argv)
                                                 col[2] = c;
                                                 c_img.draw_point(i,k,0,col);
                                         }
-					cout << endl;
                                 }
 				int nIterations = trainer.learning_process();
                                 string str = "image/iterations_"+to_string(nIterations)+"_label_"+to_string(img.label)+"_error_"+to_string(trainer.square_error())+".jpg";
@@ -112,10 +110,8 @@ int main(int argc, char **argv)
                         double error = testing.square_error();
                         if (label == predict) {
                                 ++nCorrect;
-                                cout << "classification:Yes label:" << label << " predict:" << predict << " sample:" << sample << " error:"<< error<<endl;
-
-                        } else {
-                                cout << "classification:No label:" << label << " predict:" << predict << " sample:" << sample << " error:"<< error<<endl;
+                                cout << "classification:Yes label:" << label << 
+				" predict:" << predict << " sample:" << sample << " error:"<< error<<endl;
                                 CImg<unsigned char> c_img(width,height,1,3);
                                 c_img.fill(255,255,255);
 
@@ -129,10 +125,16 @@ int main(int argc, char **argv)
                                                 c_img.draw_point(i,j,0,col);
                                         }
                                 }
-				//display failed detect
-                                //c_img.display();
+				const char b[3] = { 255,60,10 }; 
+			        c_img.draw_text(5,5,to_string(label).c_str(),b);
+				string str = "image/classify_yes_label_"+to_string(label)+".jpg";
+		                c_img.save_jpeg(str.c_str());
+                        } else {
+                                cout << "classification:No label:" << label << 
+				" predict:" << predict << " sample:" << sample << " error:"<< error<<endl;
                         }
                 }
+
                 double accuracy = (double)(nCorrect) / nTesting * 100.0;
                 cout << "Number of correct samples: " << nCorrect << " / " << nTesting << endl;
                 cout << "Accuracy: " << accuracy << endl;

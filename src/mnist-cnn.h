@@ -176,17 +176,12 @@ namespace MNIST
 		            }
 			}
 		    }			
-		    //cout << "Image:" << endl;
-		    //cout << "**************************************\n";
 		    im.wh.resize(height+1);
 		    for (int j = 1; j <= height; ++j) {
 			for (int i = 1; i <= width; ++i) {
-				//cout << d[i][j];
 				im.wh[j].push_back(d[i][j]);
 			}
-			//cout << endl;
 		    }
-		    //cout << "**************************************\n";
 		    for (int j = 1; j <= height; ++j) {
 			for (int i = 1; i <= width; ++i) {
 			    	int pos = i + (j - 1) * width;
@@ -198,7 +193,6 @@ namespace MNIST
 			expected[i] = 0.0;
 		    expected[number + 1] = 1.0;
 		    
-		    //cout << "Label: " << (int)(number) << endl;
 		    im.label=(int)(number);
 		    return im;
 		}
