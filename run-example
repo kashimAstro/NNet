@@ -6,3 +6,4 @@
 ./examples/multilayer-perceptron/bin/multilayer-perceptron 
 ./examples/perceptron/bin/perceptron 
 ./bin/rbm data/rbm_train.dat 
+./bin/bayesian data/bayesian-train.dat data/bayesian-test.dat data/bayesian.confg 
